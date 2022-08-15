@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  <title>HelpDesk</title>
+</head>
+
+<body>
+  <div id="container">
+    <div class="addContainer">
+      <button type="button" class="add-ticket">Добавить тикет</button>
+      <h4 class='no-jobs'>Активных тикетов нет</h4>
+
+
+      <div class="containers"></div>
+
+      <div id="pop-up" class="pop-up none">
+        <h4 class="title-popup"></h4>
+        <form id="formElem" action="" novalidate class="form">
+          <label for="">
+            <h3>Краткое описание</h3>
+            <input type="text" name="" class="input-text input-short">
+          </label>
+          <label for="">
+            <h3>Подробное описание</h3>
+            <textarea description="" id="" class="input-text input-long"></textarea>
+          </label>
+          <div class="buttons-save">
+            <button type="button" class="buttons btn-off">Отмена</button>
+            <button type="button" class="buttons btn-on">Ок</button>
+          </div>
+        </form>
+      </div>
+
+
+
+
+      <div id="pop-up-delete" class="none">
+        <h4>Удалить тикет</h4>
+        <p>Вы уверены, что хотите удалить тикет? Это действие не обратимо.</p>
+        <div class="btns-delete">
+          <button type="button" class="buttons btn btn-delete">Отмена</button>
+          <button type="button" class="buttons btn btn-ok">Да</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="../src/js/app.js" type="module"></script>
+</body>
+
+</html>
