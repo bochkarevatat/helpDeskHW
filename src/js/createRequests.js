@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 export default async function createRequest(options) {
   const baseUrl = 'http://localhost:7080/';
   const requestUrl = baseUrl + options.url;
@@ -7,7 +8,4 @@ export default async function createRequest(options) {
   });
   // console.log(response)
   return response.json();
-
-  
-}
-
+};

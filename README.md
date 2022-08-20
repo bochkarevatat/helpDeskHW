@@ -1,4 +1,5 @@
-# 7. Работа с HTTP
-## HelpDesk
-## [![Build status](https://ci.appveyor.com/api/projects/status/rq8hmq3fnlmql2f4?svg=true)]
-## [git-pages]
+# Webpack5
+
+[Информация о релизе Webpack 5](https://webpack.js.org/blog/2020-10-10-webpack-5-release/)
+
+[Migration Guide](https://webpack.js.org/migrate/5/)
