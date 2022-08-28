@@ -8,4 +8,4 @@ export default async function createRequest(options) {
   });
   // console.log(response)
   return response.json();
-};
+}

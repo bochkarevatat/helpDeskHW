@@ -22,5 +22,5 @@ export default function formatDate(date) {
   const hours = d.getHours();
   const minutes = d.getMinutes();
   const formatTime = (x) => (x < 10 ? `0${x}` : x);
-  return `${day} ${month} ${year} ${formatTime(hours)}:${formatTime(minutes)}`
-};
+  return `${day} ${month} ${year} ${formatTime(hours)}:${formatTime(minutes)}`;
+}

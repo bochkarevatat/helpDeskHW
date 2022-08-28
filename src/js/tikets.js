@@ -6,7 +6,7 @@ import formatDate from './formatDate.js';
 export default class TicketsUnit {
   constructor() {
     this.addUnits = document.querySelector('.containers');
-  };
+  }
 
   render(tickets) {
     if (tickets.length > 1) {
@@ -24,7 +24,7 @@ export default class TicketsUnit {
     id,
     name,
     status,
-    description
+    description,
   }) {
     const date = formatDate(new Date());
     return `
