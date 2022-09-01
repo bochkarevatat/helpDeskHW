@@ -1,4 +1,4 @@
 // TODO: write code here
-import init from './HPwidget.js';
+import init from './hpwidget.js';
 
 init();

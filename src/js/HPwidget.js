@@ -90,7 +90,7 @@ function addPopup() {
       document.querySelector('.input-long').value = event.target.closest('.unit').querySelector('.description').textContent;
     }
     if (event.target.matches('.btn-on')) {
-      editTicket();
+      // editTicket();
       // const editUnit = event.target.closest('.unit');
       // document.querySelector('.input-short').value = document.querySelector('.name').innerText;
     }
