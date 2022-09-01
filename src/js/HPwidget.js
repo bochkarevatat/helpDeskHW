@@ -20,27 +20,27 @@ async function addTicketHandler() {
   ticketsUnit.render(tickets);
 }
 
-async function editTicket() {
-  // const ticketId = document.querySelector('.unit').dataset.id;
-  // console.log(ticketId);
-  const formData = new FormData();
-  const inputShot = document.querySelector('.input-short').value;
-  const inputLong = document.querySelector('.input-long').value;
-  formData.append('name', inputShot);
-  formData.append('description', inputLong);
-  const updateTickets = await createRequest({
-    url: 'editTicket/',
-    method: 'PUT',
-    body: formData,
-  });
-  ticketsUnit.render(updateTickets);
-}
+// async function editTicket() {
+//   // const ticketId = document.querySelector('.unit').dataset.id;
+//   // console.log(ticketId);
+//   const formData = new FormData();
+//   const inputShot = document.querySelector('.input-short').value;
+//   const inputLong = document.querySelector('.input-long').value;
+//   formData.append('name', inputShot);
+//   formData.append('description', inputLong);
+//   const updateTickets = await createRequest({
+//     url: 'editTicket/',
+//     method: 'PUT',
+//     body: formData,
+//   });
+//   ticketsUnit.render(updateTickets);
+// }
 
 async function deleteTickets() {
   let deletedTicket = document.querySelector('.unit');
   // const ticketId = deletedTicket.dataset.id;
   const response = await createRequest({
-    url: 'deleteById/',
+    url: 'deleteById/:id/',
     method: 'DELETE',
   });
   if (response.success) {
