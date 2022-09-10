@@ -37,18 +37,20 @@ async function addTicketHandler() {
 // }
 
 async function deleteTickets() {
+  // let deletedTicket = [...document.querySelectorAll('.unit')];
   let deletedTicket = document.querySelector('.unit');
-  // const ticketId = deletedTicket.dataset.id;
+  const ticketId = deletedTicket.dataset.id;
   const response = await createRequest({
-    url: 'deleteById/:id/',
+    url: `deleteById/:${ticketId}/`,
     method: 'DELETE',
   });
+  console.log(response)
   if (response.success) {
     deletedTicket.remove();
     deletedTicket = null;
   }
-  // console.log(ticketId)
 }
+
 
 function addPopup() {
   const containerMain = document.querySelector('#container');
@@ -102,6 +104,11 @@ function addPopup() {
       document.getElementById('pop-up-delete').classList.add('none');
     }
     if (event.target.matches('.btn-ok')) {
+      // let deletedTicket = document.querySelector('.unit');
+      
+      // const ticketId = deletedTicket.dataset.id;
+      // deletedTicket.remove();
+
       deleteTickets();
       document.getElementById('pop-up-delete').classList.add('none');
     }
