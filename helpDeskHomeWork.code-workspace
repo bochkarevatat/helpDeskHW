@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../HTTPhomeWork2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "helpDeskHomeWork"
+	}
+}

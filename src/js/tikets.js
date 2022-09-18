@@ -32,9 +32,9 @@ export default class TicketsUnit {
       <div class='unit-one' data-id='${id}' data-status='true'>
       <div class='status status-${status}'></div>
       <div class='name'>${name}</div>
-      <div class='date'>${date}</div>
+      <div class='date' >${date}</div>
       <div class='edit'></div>
-      <div class='delete'></div>
+      <div class='delete' data-id='${id}'></div>
     </div>
     <div class='unit-two none'>
       <div class='description'>${description}</div>
