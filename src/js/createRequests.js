@@ -6,6 +6,6 @@ export default async function createRequest(options) {
     method: options.method || 'GET',
     body: options.body,
   });
-  // console.log(response)
+  console.log(response)
   return response.json();
 }
